@@ -248,6 +248,10 @@ header.header {
     transition: 0.3s;
   }
 
+  .navmenu a, .navmenu i {
+    font-size: 1.15em;
+  }
+
   .navmenu>ul>li>a:before {
     content: "";
     position: absolute;
@@ -1579,4 +1583,18 @@ section,
   transform: scale(1.04) translateY(-4px);
   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
   z-index: 2;
+}
+
+.navmenu i {
+  margin-right: 0.5em;
+}
+
+@media (max-width: 576px) {
+  .projects .isotope-container > a,
+  .projects .isotope-container > div {
+    margin-bottom: 1.5rem !important;
+  }
+  .projects .isotope-container {
+    row-gap: 1.5rem !important;
+  }
 }
